@@ -3,11 +3,11 @@ using namespace std;
 
 /* Print the following pattern :-
 
-    A
-    BB
-    CCC
-    DDDD
-    EEEEE
+    E 
+    D E 
+    C D E 
+    B C D E 
+    A B C D E 
 
 */
 
@@ -15,9 +15,9 @@ void printPattern(int n)
 {
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (char j = 'E'-i; j <= 'E'; j++)
         {
-            cout << char(65+j);
+            cout<<j<<" ";
         }
         cout << endl;
     }
